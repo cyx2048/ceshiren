@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "登录模块",
+    "children" : [ {
+      "name" : "登录成功",
+      "children" : [ {
+        "name" : "test_login_success",
+        "uid" : "8b630cd5678d43d",
+        "parentUid" : "57a00934f1bd353362aa1d78642bc405",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614436237058,
+          "stop" : 1614436237059,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "57a00934f1bd353362aa1d78642bc405"
+    }, {
+      "name" : "登录失败",
+      "children" : [ {
+        "name" : "test_fail",
+        "uid" : "effa131f3dd3a9eb",
+        "parentUid" : "e3ad7243d130097a0b853dba02afbe33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614436237061,
+          "stop" : 1614436237061,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3ad7243d130097a0b853dba02afbe33"
+    } ],
+    "uid" : "6958045a481574bf02bb11ef07a7047b"
+  } ]
+}
