@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/6 9:42
 # @Author  : cyx
-# @function: 打开企业微信，外出打卡
+# @function: 打开企业微信>工作台>打卡>外出打卡
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
@@ -45,7 +45,6 @@ class TestDemo:
                                  '.scrollIntoView(new UiSelector()'
                                  '.text("打卡").instance(0));').click()
         self.driver.find_element(MobileBy.XPATH, "//*[@text='外出打卡']").click()
-        sleep(5)
         self.driver.find_element(MobileBy.XPATH, '//*[contains(@text, "次外出")]').click()
         print(self.driver.page_source)
         # sleep(2)
