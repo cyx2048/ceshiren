@@ -1,5 +1,5 @@
 # -*-coding:utf-8-*-
-# appium连接模拟器 安装重启qq
+# appium连接模拟器 打开qq
 from appium import webdriver
 from time import sleep
 
