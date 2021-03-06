@@ -5,6 +5,7 @@
 
 import pytest
 import allure
+import time
 
 @allure.feature("搜索模块")
 class TestSearch():
