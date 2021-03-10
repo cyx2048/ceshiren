@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/3/7 20:47
 # @Author  : cyx
-# @function: 该功能描述
+# @function: 浏览器复用、cookie登录
 # @gitbub  :
 """
 作业：通过浏览器利用cookie实现企业微信登录
@@ -33,7 +33,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestLogin:
-    "方法1：复用浏览器登录,通过复用获取cookie方法"
+    "方法1：复用已有浏览器登录,通过复用获取cookie方法"
     def test_get_cookie1(self):
         chrome_arg = webdriver.ChromeOptions()
         chrome_arg.debugger_address = '127.0.0.1:9222'
@@ -61,7 +61,7 @@ class TestLogin:
         self.driver = webdriver.Chrome()
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
         try:
-            with open('./cookie.txt', 'r', encoding='utf-8') as f:
+            with open('cookie.txt', 'r', encoding='utf-8') as f:
                 cookies = json.load(f)
             for cookie in cookies:
                 self.driver.add_cookie(cookie)

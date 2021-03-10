@@ -12,5 +12,3 @@ class MainPage(object):
     def __init__(self,driver:webdriver):
         self.driver = driver
     def goto_addresslist(self):
-        # 点击通讯录
-        self.driver.
