@@ -1,5 +1,5 @@
 # -*-coding:utf-8-*-
-# appium连接模拟器 打开qq
+# appium连接模拟器 打开qq 1
 from appium import webdriver
 from time import sleep
 
